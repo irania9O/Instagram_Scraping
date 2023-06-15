@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1151</width>
+    <height>857</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(254, 255, 227);
+}
+</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="Line" name="line_25">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>50</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send_message">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>700</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Send Message</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>700</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Download</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="message_box">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>330</y>
+      <width>251</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+   	border-radius: 10px;
+	border: 2px solid rgb(255, 69, 0);
+    color: rgb(0, 0, 255);
+ }    
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Message ...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>200</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>@</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>351</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Send Direct Message</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>80</y>
+      <width>211</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Account Info</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>130</y>
+      <width>241</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>400522148</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>70</y>
+      <width>271</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Seyed ali Kamali</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entered_id">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>220</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLineEdit {
+   		 border-radius: 10px;
+		border: 2px solid rgb(255, 69, 0);
+    	color: rgb(0, 0, 255);
+    }    
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Id</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ask_path">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>329</y>
+      <width>251</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Select Where you
+ wnat to save
+ stories</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="followers_count">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>700</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Followers Count</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="followings_count">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>620</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Following Count</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="posts_count">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>540</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: gold;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+	border: 2px solid rgb(58, 134, 255);
+	border-radius: 20px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Posts Count</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Image">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway ExtraLight</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_26">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>780</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_27">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_28">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>780</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_29">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>50</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_30">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>780</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>60</y>
+      <width>20</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255, 69, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
